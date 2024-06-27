@@ -76,4 +76,5 @@ export interface Country {
     format: string;
     regex: string;
   };
+  isSelected: boolean;
 }
