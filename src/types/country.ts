@@ -41,7 +41,7 @@ export interface Country {
   };
   latlng: number[];
   landlocked: boolean;
-  area: 142;
+  area: number;
   demonyms: {
     [key: string]: {
       f: string;

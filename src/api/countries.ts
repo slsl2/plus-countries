@@ -8,5 +8,6 @@ export const getCountries = async (): Promise<Country[]> => {
     return response.data;
   } catch (error) {
     console.log(error);
+    throw new Error("Error fetching countries");
   }
 };

@@ -1,10 +1,16 @@
+import React from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./App.css";
-import { getCountries } from "./api/countries";
+import { CountryList } from "./components/CountryList";
 
 function App() {
-  getCountries();
+  const queryClient = new QueryClient();
 
-  return <></>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <CountryList />
+    </QueryClientProvider>
+  );
 }
 
 export default App;
